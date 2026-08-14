@@ -48,6 +48,6 @@ nav {
 #Experience ul {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 90px;
     padding-left: 20px;
 }
