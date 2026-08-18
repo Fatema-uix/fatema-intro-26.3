@@ -1,0 +1,76 @@
+body{
+background-color: #f8d9d9;
+color: #333;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 4px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section{
+    border: 1px solid #ccc;
+}
+
+#Connect ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    padding: 12px;
+    background-color: #f0f0f0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#Experience {
+  margin: 40px 0;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 25px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.experience-title {
+  flex: 1;
+}
+
+.experience-date {
+  flex: 1;
+}
+
+.experience-description {
+  flex: 2;
+}
+
+.experience-title h3,
+.experience-date p,
+.experience-description p {
+  margin-top: 0;
+}
