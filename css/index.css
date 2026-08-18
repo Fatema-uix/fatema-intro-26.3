@@ -45,8 +45,11 @@ nav {
     top: 0;
     z-index: 1000;
 }
-#Experience {
-  margin: 40px 0;
+
+#Experience ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .experience-item {
@@ -57,20 +60,17 @@ nav {
   border-bottom: 1px solid #ccc;
 }
 
-.experience-title {
+.experience-item h3 {
   flex: 1;
+  margin: 0;
 }
 
 .experience-date {
   flex: 1;
+  margin: 0;
 }
 
 .experience-description {
   flex: 2;
-}
-
-.experience-title h3,
-.experience-date p,
-.experience-description p {
-  margin-top: 0;
+  margin: 0;
 }
