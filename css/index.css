@@ -45,9 +45,32 @@ nav {
     top: 0;
     z-index: 1000;
 }
-#Experience ul {
-    display: flex;
-    flex-direction: row;
-    gap: 90px;
-    padding-left: 20px;
+#Experience {
+  margin: 40px 0;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 25px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.experience-title {
+  flex: 1;
+}
+
+.experience-date {
+  flex: 1;
+}
+
+.experience-description {
+  flex: 2;
+}
+
+.experience-title h3,
+.experience-date p,
+.experience-description p {
+  margin-top: 0;
 }
