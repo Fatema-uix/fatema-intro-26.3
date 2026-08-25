@@ -88,3 +88,57 @@ nav {
   border: 2px solid #333;
   border-radius: 8px;
 }
+
+form[name="leave_message"] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 600px;
+}
+
+form[name="leave_message"] input,
+form[name="leave_message"] textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form[name="leave_message"] textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form[name="leave_message"] button {
+  width: fit-content;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#messages li {
+  margin-bottom: 1rem;
+}
+
+#messages li span {
+  margin-left: 0.5rem;
+}
+
+#messages li button {
+  margin-left: 1rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  form[name="leave_message"] input,
+  form[name="leave_message"] textarea,
+  form[name="leave_message"] button {
+    font-size: 1.1rem;
+    min-height: 44px;
+  }
+
+  form[name="leave_message"] textarea {
+    min-height: 140px;
+  }
+}
