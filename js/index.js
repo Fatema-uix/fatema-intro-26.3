@@ -66,3 +66,27 @@ messageForm.addEventListener('submit', function(event) {
 
   messageForm.reset();
 });
+
+const projectSection = document.querySelector("#projects");
+const projectList = projectSection.querySelector("ul");
+
+let repositories;
+
+fetch("https://api.github.com/users/Fatema-uix/repos")
+  .then((response) => response.json())
+  .then((data) => {
+    repositories = data;
+    console.log(repositories);
+
+    for (let i = 0; i < repositories.length; i++) {
+      let project = document.createElement("li");
+      project.innerText = repositories[i]["name"];
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => {
+    console.error("There was an error fetching your repositories:", error);
+
+    projectList.innerHTML =
+      "<li>Sorry, we could not load the projects at this time.</li>";
+  });
