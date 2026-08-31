@@ -120,14 +120,18 @@ form[name="leave_message"] button {
   margin-bottom: 1rem;
 }
 
+#messages li a {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
 #messages li span {
-  margin-left: 0.5rem;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 #messages li button {
-  margin-left: 1rem;
   padding: 0.5rem 0.75rem;
-  cursor: pointer;
 }
 
 @media (max-width: 600px) {
