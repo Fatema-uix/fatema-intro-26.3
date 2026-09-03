@@ -67,7 +67,7 @@ messageForm.addEventListener('submit', function(event) {
   messageForm.reset();
 });
 
-const projectSection = document.querySelector("#projects");
+const projectSection = document.querySelector("#Projects");
 const projectList = projectSection.querySelector("ul");
 
 let repositories;
@@ -83,6 +83,7 @@ fetch("https://api.github.com/users/Fatema-uix/repos")
       project.innerText = repositories[i]["name"];
       projectList.appendChild(project);
     }
+
   })
   .catch((error) => {
     console.error("There was an error fetching your repositories:", error);
