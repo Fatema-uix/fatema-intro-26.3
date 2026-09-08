@@ -1,0 +1,102 @@
+/*  Weather API Section
+    */
+
+#weather {
+    text-align: center;
+    max-width: 900px;
+}
+
+.weather-intro {
+    margin-bottom: 30px;
+}
+
+
+/* Weather navigation */
+
+.weather-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.weather-nav-button {
+    padding: 12px 25px;
+
+    border: 2px solid #222;
+    border-radius: 6px;
+
+    background-color: white;
+    color: #222;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.weather-nav-button:hover {
+    background-color: #eeeeee;
+}
+
+.weather-nav-button.active {
+    background-color: #222;
+    color: white;
+}
+
+
+/* Weather result card */
+
+.weather-card {
+    min-height: 220px;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* Temperature */
+
+.temperature-value {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.temperature-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* Weather condition */
+
+.condition-icon {
+    font-size: 3rem;
+}
+
+.condition-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+/* Error message */
+
+.weather-error {
+    font-weight: 600;
+}
+
