@@ -1,0 +1,64 @@
+<!-- =========================
+     Open-Meteo Weather API
+     ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>openApi
+    </title>
+
+     <nav>
+
+            <h1>Weather API</h1>
+
+            <a href="index.html">
+                Back to Portfolio
+            </a>
+
+        </nav>
+
+</head>
+<body>
+    
+<section id="weather">
+
+    <h2>Weather</h2>
+
+    <p class="weather-intro">
+        Check the current weather in Bellevue, Washington.
+    </p>
+
+    <!-- Navigation between API data -->
+    <div class="weather-navigation">
+
+        <button
+            id="temperature-button"
+            class="weather-nav-button active"
+            type="button"
+        >
+            Temperature
+        </button>
+
+        <button
+            id="condition-button"
+            class="weather-nav-button"
+            type="button"
+        >
+            Weather Condition
+        </button>
+
+    </div>
+
+    <!-- Weather API result -->
+    <div id="weather-result" class="weather-card">
+
+        <p>Loading weather information...</p>
+
+    </div>
+
+</section>
+ <script src="js/openapi.js"></script>
+</body>
+</html>
